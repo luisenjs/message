@@ -1,0 +1,13 @@
+name: "Showing a Input Name"
+description: "Uso de input desde un action en otro repositorio"
+author: "Luis Jara Sánchez"
+
+inputs:
+  message:
+    description: "Mensaje a mostrar"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    run: echo "Este es un mensaje enviado desde un action otro repositorio ${{ inputs.message }}"
