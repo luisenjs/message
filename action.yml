@@ -10,4 +10,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: echo "Este es un mensaje enviado desde un action otro repositorio ${{ inputs.message }}"
+    - shell: bash
+      run: echo "Este es un mensaje enviado desde un action otro repositorio ${{ inputs.message }}"
